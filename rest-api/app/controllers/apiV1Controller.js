@@ -145,6 +145,11 @@ async function GetAlllContractors(req, res, next)
                     first_name: contractor[i].first_name,
                     last_name: contractor[i].last_name,
                     company_name: contractor[i].dataValues.company_name
+                    company_city: contractor[i].dataValues.city,
+                    company_region: contractor[i].dataValues.reg,
+                    company_country: contractor[i].dataValues.country,
+                    company_logo: contractor[i].dataValues.logo_image,
+                    company_line_of_work: contractor[i].dataValues.line_of_work,
                 };
             }
             res.send(201, mojster);
