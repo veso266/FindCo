@@ -144,6 +144,8 @@ async function GetAlllContractors(req, res, next)
                     id: uuid.unparse(contractor[i].idApplication_user),
                     first_name: contractor[i].first_name,
                     last_name: contractor[i].last_name,
+                    email: contractor[i].email,
+                    phone: contractor[i].phone,
                     company_name: contractor[i].dataValues.company_name,
                     company_city: contractor[i].dataValues.city,
                     company_region: contractor[i].dataValues.reg,
